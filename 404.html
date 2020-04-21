@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>404 - Page Not Found</title>
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    </head>
+    <style>
+        @font-face {
+  font-family: TTNorms;
+  src: url(fonts/TTNorms-Bold.woff);
+}
+
+body {
+    font-family: TTNorms, TTNorms-Bold, TT Norms Bold, Calibri;
+}
+
+#errormsg {
+    position: relative;
+    left: 10px;
+    font-family: Nintendo Switch UI;
+}
+#faq {
+    background-color: grey;
+}
+button {
+    background-color: lightblue;
+    font-family: Nintendo Switch UI, Calibri, Helventica, Arial;
+}
+faq-title {
+    color: black;
+}
+        </style>
+        
+    <body>
+       <div id="errormsg">
+            <img src="img/error.png" height="100"></img>
+        <h1>Page Not Found</h1>
+        <h2>Error Code: 404</h2>
+        <p>Please <a href="javascript:history.go(-1);">go back</a> and change the URL you tried to put in.</p>
+        <br>
+        <a href="#faq">Learn more information about this error code.</a>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div id="faq">
+            <h1>Frequently Asked Questions/Learn more about this error message</h1>
+            <h2 id="q1">Why am I getting this error page?</h2>
+            <p>You are getting this error page because you typed the website name incorrectly. Parts of sites names are case sensitive but others are not. For example say if you were trying to access "example.com/test.html", it would fail if you typed it out like this: "example.com/TeSt.html" but it wouldn't fail if you typed it like this: "eXaMPle.CoM/test.html".</p>
+            <h2 id="q2">How do I go back to where I was?</h2>
+            <p>To go back to where you was before, click on one of the buttons below and it'll automatically redirect you to where you was browsing on.</p>
+            <button onclick="javascript:history.go(-1);">Go back one page</button>            <button onclick="javascript:history.go(-2);">Go back two pages</button>
+
+        </div>
+    </body>
+</html>
